@@ -1,0 +1,115 @@
+@import "./colors";
+p,h1,h2,h3,a,img,button{
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+nav{
+    z-index: 2;
+    width:100%;
+    padding:1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    
+    
+    >h1{
+        text-transform:uppercase;
+        font:900 2rem $text1;
+    }
+    >main{
+        width:85%;
+        display: flex;
+        gap: 1.2rem;
+        justify-content: flex-end;
+        align-items: center;
+        >a{
+            font: 500 1.2rem   $text1;
+            color:$third;
+            &:hover{
+                color:rgb(231, 149, 26);
+
+            }
+
+        }
+    }
+    >.main2{
+        >img{
+            width:40px;
+            height: 40px;
+            z-index:20;
+            margin-left:100px;
+            display: none;
+        }
+        >#list{
+            display: none;
+            
+        }
+        
+    }
+    box-shadow:0px .5px 5px  rgb(111, 106, 106) ;
+   
+}
+@media (max-width: 900px) {
+    nav {
+      position: fixed;
+      justify-content: space-between;
+      main {
+        display: none;
+      }
+      .main2 {
+        img {
+          display: block;
+        }
+        > #list {
+          position: fixed;
+          list-style: none;
+          right: -100%;
+          background-color: #fff;
+          padding: 10px;
+          border: 1px solid #ccc;
+          z-index: 1;
+          border: none;
+          border-radius: 10px;
+          background-color: rgb(0, 0, 0);
+          display: none;
+          &.active{
+            display: block;
+          }
+          li {
+            list-style: none;
+            font-size: 50px;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            
+          }
+          a{
+            color: white;
+            user-select: none;
+          }
+          
+        }
+      }
+    }
+  }
+  
+@keyframes slideInRight {
+    0% {
+      right: -100%; 
+    }
+    100% {
+      right: 0; /* Fully visible */
+    }
+  }
+  @keyframes slideInLeft {
+    0% {
+      right: 0; 
+    }
+    100% {
+      right: -100%; /* Fully visible */
+    }
+  }
+  

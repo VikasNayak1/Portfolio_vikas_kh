@@ -1,0 +1,174 @@
+@import "Colors";
+g {
+  color: orange;
+}
+.home1 {
+  width:100%;
+  min-height: 100vh;
+  gap:250px;
+  background-image: url(../assets/services-bg-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+  > .text {
+   
+    
+    > h1 {
+      
+      font: 900 4rem $text1;
+      color: rgb(0, 0, 0);
+
+      > g {
+        color: orange;
+      }
+
+      margin-bottom: 20px;
+    }
+
+    > h3 {
+      font: 500 1.7rem $text1;
+      color: rgb(0, 0, 0);
+
+      > g {
+        font: 500 1.7rem $text1;
+        color: orange;
+      }
+    }
+    >button{
+      margin-top: 20px;
+      width:150px;
+      height:40px;
+      border: none;
+      background-color: rgb(1, 19, 113);
+      border-radius:100px;
+      font: 900 1.5rem $text1;
+      color: aliceblue;
+      box-shadow:0px .5px 5px  rgb(83, 108, 237) ;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    >.links{
+      display: flex;
+      gap:10px;
+      >a{
+        >button{
+          width:50px;
+          height:50px;  
+          border: none;
+          border-radius: 50%;
+          box-shadow: 0px .10px 5px blue;
+          cursor: pointer;
+          color: white;
+          font:300 1.2rem $text1;
+          animation:imgUp 1s linear infinite alternate;
+          // background-color: red;
+        }
+
+      }
+      
+    }
+  }
+
+  > .img {
+    position: relative;
+
+    img {
+      width: 400px;
+      z-index: 1;
+      position: relative;
+      animation-delay:2s;
+      // animation: imgUp 0.5s linear infinite alternate;
+     
+    }
+
+    &::before {
+      // animation: imgUp 0.5s linear infinite alternate;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../assets/graph.png);
+      background-size: cover;
+      opacity: 0.9; 
+      z-index: 1; 
+    }
+  }
+  @keyframes imgUp {
+    to{
+      transform:translateY(-10px);
+      
+    }
+    
+  }
+  
+}
+
+
+
+//Home 2
+.home2{
+  min-height:80vh;
+  width:100%;
+  background-color: rgb(80, 76, 73);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  padding:0 60px 0 60px;
+ 
+  >#header{
+    >h1{
+      color: antiquewhite;
+      font-size: 50px;
+    }
+  }
+  >#text{
+    >p{
+      color: antiquewhite;
+      font-size: 30px;
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .home1 {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: left;
+    font-size: 50%;
+    padding-top:50px;
+    >.text{
+      >h1{
+        margin-top:20px;
+          font: 900 3.5rem $text1;
+      }
+    }
+    > .img {
+      img {
+        width:100%;
+       
+      }
+    }
+  }
+
+  .home2{
+    >#text{
+      >p{
+        color: antiquewhite;
+        font-size: 25px;
+      }
+    }
+  }
+  
+
+ 
+}
