@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/VikasNayak1/Portfolio_vikas_kh.git/static/css/main.72e83239.css",
+    "main.js": "/VikasNayak1/Portfolio_vikas_kh.git/static/js/main.37ad4c61.js",
+    "static/media/IMG_20221128_174643_821 (1).png": "/VikasNayak1/Portfolio_vikas_kh.git/static/media/IMG_20221128_174643_821 (1).e6483a36c56a4aa876b7.png",
+    "static/media/Linkedin.png": "/VikasNayak1/Portfolio_vikas_kh.git/static/media/Linkedin.72097b5277a499b1902f.png",
+    "static/media/graph.png": "/VikasNayak1/Portfolio_vikas_kh.git/static/media/graph.a7f3c776030e68670339.png",
+    "static/media/services-bg-5.jpg": "/VikasNayak1/Portfolio_vikas_kh.git/static/media/services-bg-5.9fe1f8ad20a5952a5c13.jpg",
+    "static/media/gmail.jpg": "/VikasNayak1/Portfolio_vikas_kh.git/static/media/gmail.27f35c965a2996c3456e.jpg",
+    "index.html": "/VikasNayak1/Portfolio_vikas_kh.git/index.html",
+    "static/media/xmark-solid.svg": "/VikasNayak1/Portfolio_vikas_kh.git/static/media/xmark-solid.33c889ee6afa3ed57684011608af6238.svg",
+    "static/media/grip-lines-solid.svg": "/VikasNayak1/Portfolio_vikas_kh.git/static/media/grip-lines-solid.34bc7bf183012b3e68ee033a1e95328a.svg",
+    "main.72e83239.css.map": "/VikasNayak1/Portfolio_vikas_kh.git/static/css/main.72e83239.css.map",
+    "main.37ad4c61.js.map": "/VikasNayak1/Portfolio_vikas_kh.git/static/js/main.37ad4c61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72e83239.css",
+    "static/js/main.37ad4c61.js"
+  ]
+}
